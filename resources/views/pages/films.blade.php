@@ -9,9 +9,9 @@
             <div class="card mb-1" style="width: 15rem;">
               <img src="{{ $movie->photo ? (file_exists(public_path('images/'.$movie->photo)) ? asset('images/'.$movie->photo) : asset('uploads/'.$movie->photo)) : asset('images/default.jpg') }}" class="card-img-top" alt="movie img" style="height: 300px; width:auto;">
               <div class="card-body">
-                <h5 class="card-title">{{ $movie->title }}</h5>
+                <h5 class="card-title text-truncate" alt="{{$movie->title}}">{{ $movie->title }}</h5>
                 <h6 class="card-text">{{ $movie->genre->name }} {{ $movie->publish_date }}</h6>
-                <p class="card-text">{{ $movie->description }}</p>
+                <p class="card-text" id="desc_card">{{ $movie->description }}</p>
                 <a href="#" class="btn btn-primary">Go somewhere</a>
               </div>
             </div>

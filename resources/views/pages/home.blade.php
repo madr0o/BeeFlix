@@ -22,7 +22,8 @@
             width: 18rem; 
             height: 42rem; 
         }
-        </style>        
+        </style> 
+    <link rel="stylesheet" href="{{asset('css/style.css')}}">       
 </head>
 <body class="m-0 p-0" style="height: 100%">
     <nav class="navbar bg-body-tertiary p-2 sticky-top">
