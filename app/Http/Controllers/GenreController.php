@@ -9,7 +9,7 @@ class GenreController extends Controller
 {
     //
     public function films() {
-        $movies = Movie::paginate(6);
+        $movies = Movie::paginate(8);
         
         return view("pages.films", data: ['movies'=>$movies]);
     }

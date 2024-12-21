@@ -20,7 +20,7 @@ class FilmController extends Controller
         $validated = $request->validate([
             'genre_id' => 'required|exists:genres,id',
             'title' => 'required|max:40',
-            'photo'=> 'required|image|max:100',
+            'photo'=> 'required|image|max:1000',
             'publish_date'=> 'required|date',
             'description'=> 'required|max:250'
         ]);

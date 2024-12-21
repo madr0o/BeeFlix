@@ -24,22 +24,24 @@
         }
         </style>        
 </head>
-<body class="m-0 p-0">
+<body class="m-0 p-0" style="height: 100%">
     <nav class="navbar bg-body-tertiary p-2 sticky-top">
         <div class="container">
           <a class="navbar-brand" href="{{route('film')}}">
-            <img src="{{asset('images\Beeflix.svg')}}" alt="BeeFlix" width="14%" height="14%">
+            <img src="{{asset('images\Beeflix.svg')}}" alt="BeeFlix" width="12%" height="12%">
           </a>
+          <button class="btn btn-primary">
+            <a href="{{route('film.create')}}" style="color: white;text-decoration:none;">Add Film</a>
+          </button>
         </div>
       </nav>
 
     <div class="d-flex flex-column align-items-center pt-4">
-        <img src="{{asset('images\bdyimg.svg')}}" alt="BeeFlix" width="40%" height="40%">
-
+        <img src="{{asset('images\bdyimg.svg')}}" alt="BeeFlix" width="25%" height="25%">
         @yield('content')
     </div>
 
-    <footer style="background-color: #3d1d53" class="">
+    <footer style="background-color: #3d1d53" class="sticky-bottom mt-3">
         <div class="container d-flex py-2 align-items-center justify-content-end">
             <h6 style="color: white" class="">@Dzaky AR</h6>
         </div>

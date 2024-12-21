@@ -3,11 +3,11 @@
 <div class="py-4">
   <div class="container">
     @foreach ($movies->chunk(4) as $chunk) <!-- Membagi data menjadi kelompok 4 item -->
-      <div class="row"> <!-- Membuka row baru untuk setiap chunk -->
+      <div class="row d-flex justify-content-between"> <!-- Membuka row baru untuk setiap chunk -->
         @foreach ($chunk as $movie)
           <div class="col-md-3 mb-2">  <!-- Membuat 4 kolom per baris di layar besar -->
-            <div class="card mb-1" style="width: 18rem;">
-              <img src="{{ asset('images/'.$movie->photo) }}" class="card-img-top" alt="movie img">
+            <div class="card mb-1" style="width: 15rem;">
+              <img src="{{ $movie->photo ? (file_exists(public_path('images/'.$movie->photo)) ? asset('images/'.$movie->photo) : asset('uploads/'.$movie->photo)) : asset('images/default.jpg') }}" class="card-img-top" alt="movie img" style="height: 300px; width:auto;">
               <div class="card-body">
                 <h5 class="card-title">{{ $movie->title }}</h5>
                 <h6 class="card-text">{{ $movie->genre->name }} {{ $movie->publish_date }}</h6>
@@ -17,7 +17,7 @@
             </div>
           </div>
         @endforeach
-      </div> <!-- Menutup row -->
+      </div> 
     @endforeach
   </div>
 
