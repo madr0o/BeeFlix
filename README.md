@@ -21,9 +21,3 @@ Anda bisa meng-clone repositories ini dengan cara:
     ```
 
 Terima kasih sudah menyempatkan untuk membaca dokumentasi ini. Semoga proyek ini dapat memberikan manfaat bagi Anda.
-
-[![Pratinjau Konten](https://via.placeholder.com/345x445)](https://assets.pinterest.com/ext/embed.html?id=596867756898911846)
-
-<img src="https://assets.pinterest.com/ext/embed.html?id=596867756898911846" width="400" alt="">
-
-<!-- <iframe src="https://assets.pinterest.com/ext/embed.html?id=596867756898911846" height="445" width="345" frameborder="0" scrolling="no" ></iframe> -->
